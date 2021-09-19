@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OompaDetailActivity"
+    android:background="#FBCF80">
+
+    <ImageView
+        android:id="@+id/oompaDetailImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/oompaDetailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/oompaDetailImage"
+        app:layout_constraintStart_toStartOf="@id/oompaDetailImage"
+        app:layout_constraintEnd_toEndOf="@id/oompaDetailImage"
+        tools:text="Marcy Karadzas"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/oompaDetailProfession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/oompaDetailName"
+        app:layout_constraintStart_toStartOf="@id/oompaDetailName"
+        app:layout_constraintEnd_toEndOf="@id/oompaDetailName"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/oompaDetailProfession"
+        android:gravity="center"
+        android:background="#B7F4F4"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+        <TextView
+            android:id="@+id/oompaDetailExtraInfoTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Info: "
+            app:layout_constraintTop_toBottomOf="@id/oompaDetailProfession"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/oompaDetailFavColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/oompaDetailExtraInfoTV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/oompaDetailFavFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/oompaDetailFavColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/oompaDetailGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/oompaDetailFavFood"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/oompaDetailAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/oompaDetailGender"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/oompaDetailEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/oompaDetailAge"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/oompaDetailCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/oompaDetailEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/oompaDetailHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/oompaDetailCountry"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/oompaDetailId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/oompaDetailHeight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

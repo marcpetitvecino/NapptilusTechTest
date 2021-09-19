@@ -1,0 +1,11 @@
+Libraries that I used in this project:
+
+Picasso: For loading image urls into ImageViews, it also automatically caches images for better performance
+
+Retrofit2: It's the first library that I started to use to get API data, so it's the one I trust the most
+
+Retrofit2 converter gson: To convert the JSON data into code
+
+Kotlinx Coroutines: To make async requests so the UI doesn't get blocked
+
+Logging Interceptor: To get API logs when debugging
